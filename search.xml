@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Typora 快捷键记录]]></title>
+    <url>%2F2018%2F12%2F17%2FTypora%20%E5%BF%AB%E6%8D%B7%E9%94%AE%E8%AE%B0%E5%BD%95%2F</url>
+    <content type="text"><![CDATA[Typora是个人写博客的MarkDown写作工具，记录一下它一些常用的快捷键，便于日后查询 1、标题和段落相关插入 1 - 6 级的标题1command + (1-6) 光标放在所在的行即可操作 标题降级和升级1command + (+或者-) 来升级和降级 光标放在所在的行即可操作 插入文本即段落1command + 0 (零不是欧) 2、插入区块相关插入表格1option + command + T 例如 用户名 Email 年龄 隔壁老王 88@qq.com 18 插入代码块1option + command + C 插入公式块1option + command + B 例如$$x+y=b$$ 插入引用1option + command + Q 例如 近几年来，父亲和我都是东奔西走，家中光景是一日不如一日。他少年出外谋生，独力支持，做了许多大事。哪知老境却如此颓唐！他触目伤怀，自然情不能自已。 （摘自：背影） 3、列表相关有序列表1option + command + O (欧) 有序一 有序二 有序三 无序列表1option + command + U 无序一 无序二 无序三 任务列表1option + command + X 任务一 任务二 任务三 列表增大和减少缩进12增大列表缩进 command + ]减少列表缩进 command + [ 任务一 任务一子任务 任务二 任务二字任务 4、其他链接引用1option + command + L 脚注1option + command + R 水平分割线1Shift + command + - 生成Toc目录无快捷键，需要点击段落然后生成就好了 5、默认支持加粗1command + B 我是对应的加粗文字 斜体1command + I 我是对应的斜体文字 下划线文字1command + U 我是对应的下划线文字 代码1shift + command + ’ 我是代码实例我继续添加一些内容再来个代码实例 注释1control + - 超链接1command + K (文字+链接) 我是超链接文字 图片1control + command + I 6、其他实用操作源代码模式切换1command + /]]></content>
+      <categories>
+        <category>开发技巧</category>
+      </categories>
+      <tags>
+        <tag>开发技巧</tag>
+      </tags>
+  </entry>
+</search>
