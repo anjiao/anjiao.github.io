@@ -146,7 +146,7 @@
 <meta property="og:image" content="http://pjk6kg9m3.bkt.clouddn.com/valid_2.png">
 <meta property="og:image" content="http://pjk6kg9m3.bkt.clouddn.com/valid_3.png">
 <meta property="og:image" content="http://pjk6kg9m3.bkt.clouddn.com/valid_4.png">
-<meta property="og:updated_time" content="2018-12-28T06:07:32.751Z">
+<meta property="og:updated_time" content="2018-12-28T06:25:27.185Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringBoot参数校验和统一处理">
 <meta name="twitter:description" content="SpringBoot参数校验和统一处理，基于它自带的 Hibernate Validator 简单实现">
@@ -539,7 +539,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/user"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"/updateUserInfo"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">updateUserInfo</span><span class="params">(@RequestBody @Valid User user, BindingResult bindingResult)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (bindingResult.hasErrors()) &#123;</span><br><span class="line">            List&lt;ObjectError&gt; errorList = bindingResult.getAllErrors();</span><br><span class="line">            <span class="keyword">if</span> (errorList != <span class="keyword">null</span> &amp;&amp; errorList.size() &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> errorList.get(<span class="number">0</span>).getDefaultMessage();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"你好"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>重启运行看结果如下图，成功返回了我们想看到的 <code>message</code></p>
 <p><img src="http://pjk6kg9m3.bkt.clouddn.com/valid_4.png" alt=""></p>
-<div class="note info"><p>但是这样并不优雅，每次都需要处理手动调用还要加入<code>BindingResul</code>t参数 </p></div>
+<div class="note info"><p>但是这样并不优雅，每次都需要处理手动调用还要加入BindingResul参数 </p></div>
 
 ### 3.2 方式二全局异常捕获
 
